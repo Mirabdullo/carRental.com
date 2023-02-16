@@ -1,16 +1,64 @@
 "use strict"
 
 const cards = document.querySelector('.cards'),
-    community = document.querySelector('.community');
+    community = document.querySelector('.community'),
+    mode = document.querySelector('.mode'),
+    body = document.querySelector('.body');
 
 
 
-    // const createElement = (tagName, className, content) => {
-    //     const element = document.createElement(tagName);
-    //     if (className) element.setAttribute("class", className);
-    //     if (content) element.innerHTML = content;
-    //     return element;
-    //   };
+
+// mode.addEventListener('click', () => {
+//     changeMode()
+//     // document.body.style.cssText = "background-color:#202C36; color:#fff;"
+// })
+
+mode.addEventListener('input', (e) => {
+    localStorage.setItem('mode', e.target.mode);
+    changeMode()
+})
+
+function changeMode() {
+
+    let mode = localStorage.getItem('mode');
+
+    if (mode === 'true') {
+        document.body.style.cssText = "background-color:#202C36; color:#fff;"
+        // header.style.cssText = "background-color:#2B3844; color:#fff;"
+
+    } else {
+        document.body.style.cssText = "background-color:#F2F2F2; color:#000;"
+        // header.style.cssText = "background-color:#ffff; color:#000;"
+    }
+}
+
+// changeMode()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 const carList = [
