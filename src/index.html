@@ -32,24 +32,34 @@
             <p>Categories</p>
           </li>
           <li class="flex flex-col relative group">
-              <span class="flex items-center gap-1 p-4 ">
-                <p>About Us</p>
-                <i class='bx bx-chevron-down text-xl' ></i>
-              </span>
-              <ul class="group-hover:block hidden w-[147px]  bg-white rounded-3xl absolute z-10 mt-14 -ml-3 border p-1">
-                <li class="py-4 px-5 rounded-full text-xl hover:bg-[#F5F5F5] active:bg-[#299764] active:text-white">News</li>
-                <li class="py-4 px-5 rounded-full text-xl hover:bg-[#F5F5F5] active:bg-[#299764] active:text-white">Careers</li>
-                <li class="py-4 px-5 rounded-full text-xl hover:bg-[#F5F5F5] active:bg-[#299764] active:text-white">Locations</li>
-              </ul>
+            <span class="flex items-center gap-1 p-4">
+              <p>About Us</p>
+              <i class="bx bx-chevron-down text-xl"></i>
+            </span>
+            <ul class="group-hover:block hidden w-[147px] bg-white rounded-3xl absolute z-10 mt-14 -ml-3 border p-1">
+              <li class="py-4 px-5 rounded-full text-xl hover:bg-[#F5F5F5] active:bg-[#299764] active:text-white">
+                News
+              </li>
+              <li class="py-4 px-5 rounded-full text-xl hover:bg-[#F5F5F5] active:bg-[#299764] active:text-white">
+                Careers
+              </li>
+              <li class="py-4 px-5 rounded-full text-xl hover:bg-[#F5F5F5] active:bg-[#299764] active:text-white">
+                Locations
+              </li>
+            </ul>
           </li>
           <li class="flex flex-col relative group">
-            <span class="flex items-center gap-1 p-4 ">
+            <span class="flex items-center gap-1 p-4">
               <p>Help center</p>
-              <i class='bx bx-chevron-down text-xl' ></i>
+              <i class="bx bx-chevron-down text-xl"></i>
             </span>
-            <ul class="group-hover:block hidden w-[147px]   bg-white rounded-3xl absolute z-10 mt-14 -ml-1 border p-1">
-              <li class="py-4 px-5 rounded-full text-xl hover:bg-[#F5F5F5] active:bg-[#299764] active:text-white">FAQ</li>
-              <li class="py-4 px-5 rounded-full text-xl hover:bg-[#F5F5F5] active:bg-[#299764] active:text-white">Contact us</li>
+            <ul class="group-hover:block hidden w-[147px] bg-white rounded-3xl absolute z-10 mt-14 -ml-1 border p-1">
+              <li class="py-4 px-5 rounded-full text-xl hover:bg-[#F5F5F5] active:bg-[#299764] active:text-white">
+                FAQ
+              </li>
+              <li class="py-4 px-5 rounded-full text-xl hover:bg-[#F5F5F5] active:bg-[#299764] active:text-white">
+                Contact us
+              </li>
             </ul>
           </li>
         </ul>
@@ -57,10 +67,10 @@
           <li>
             <p class="font-semibold">+1 820 455 0000</p>
           </li>
-          <li class="mode w-[58px] h-[58px] bg-[#F5F5F5] rounded-full flex items-center justify-center">
-            <i class="bx bxs-moon text-2xl text-[#555555]" id="dark"></i>
+          <li class="theme w-[58px] h-[58px] bg-[#F5F5F5] rounded-full flex items-center justify-center">
+            <i class="bx bxs-moon  mode p-4 bg-[#272727] rounded-full text-[#555555] active:bg-[#299764] active:text-white duration-300" id="dark"></i>
           </li>
-          <li class="flex items-center py-3 px-8 rounded-3xl text-white bg-[#299764]">
+          <li class="login-btn flex items-center py-3 px-8 rounded-3xl text-white bg-[#299764]">
             <p>Login</p>
             <i class="bx bx-log-in w-1 h-3 ml-2"></i>
           </li>
@@ -70,67 +80,132 @@
   </header>
   <!-- header end -->
 
+
+
+      <!-- modal started -->
+      <div
+      class="modal-window  z-30 hidden bg-[#00000081] w-full min-h-screen fixed top-0 backdrop-blur-sm"
+    >
+      <div
+        class="modal-content  duration-200 max-w-[590px] min-h-[483px] p-5 bg-white mx-auto mt-40 rounded-2xl overflow-hidden shadow-md shadow-slate-900"
+      >
+      <div class="modal-footer absolute text-right p-3 ml-[470px] mt-2">
+        <button
+          type="submit"
+          class="close-btn py-5 px-7 border rounded-full bg-[#f5f5f5] text-xl font-bold focus:ring-4 focus:ring-black duration-200">
+          x
+        </button>
+      </div>
+        <div class="flex justify-center flex-col items-center">
+          <h2 class="text-3xl font-medium mt-10 mb-[10px]">Login</h2>
+          <p>Use the email and password that you login</p>
+        </div>
+        <div
+          class="modal-body bg-white min-h-[440px] flex flex-col items-center"
+        >
+          <form action="#" class="min-w-[80%] p-3 rounded-md text-center mt-8">
+            <label for="email" class="w-full">
+              <input
+                type="email"
+                class="form-control w-[80%] mx-auto p-3 rounded-full mb-4 focus:ring-4 focus:ring-sky-400 focus:outline-none border"
+                id="email"
+                placeholder="Email"
+              />
+            </label>
+
+
+            <label for="password">
+              <input
+                type="password"
+                placeholder="Password"
+                class="form-control w-[80%] mx-auto p-3 rounded-full mb-4 focus:ring-4 focus:ring-sky-400 focus:outline-none border"
+                id="password"
+              />
+              <img src="" alt="">
+            </label>
+            <button
+              class="btn block mx-auto w-[80%] my-4 bg-green-500 px-4 py-2 rounded-lg m-3 text-white font-bold hover:bg-green-700 focus:ring-4 focus:ring-green-400 duration-200"
+            >
+              SIGN UP
+            </button>
+          </form>
+        </div>
+
+
+      </div>
+    </div>
+    <!-- modal finished -->
+
+
+
+
+
+
+
+
+
   <!-- start main -->
   <main>
-
     <section>
       <div class="container mx-auto">
-            <!-- Swiper -->
-    <div class="swiper mySwiper relative rounded-2xl mt-5">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="relative">
-            <div class="absolute text-center w-[416px] ml-[392px] mt-[60px] z-10">
-              <h1 class="text-3xl text-white font-bold">Compact cars</h1>
-              <p class="text-white">
-                Rent cars as you are comfortable and where you are comfortable.
-              </p>
+        <!-- Swiper -->
+        <div class="swiper mySwiper relative rounded-2xl mt-5">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="relative">
+                <div class="absolute text-center w-[416px] ml-[392px] mt-[60px] z-10">
+                  <h1 class="text-3xl text-white font-bold">Compact cars</h1>
+                  <p class="text-white">
+                    Rent cars as you are comfortable and where you are
+                    comfortable.
+                  </p>
+                </div>
+                <div class="bgshadow rounded-2xl"></div>
+                <img src="./images/Rectangle 671.png" alt="img" class="rounded-2xl" />
+              </div>
             </div>
-            <div class="bgshadow rounded-2xl"></div>
-            <img src="./images/Rectangle 671.png" alt="img" class="rounded-2xl" />
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="relative">
-            <div class="absolute text-center w-[416px] ml-[392px] mt-[60px] z-10">
-              <h1 class="text-3xl text-white font-bold">Compact cars</h1>
-              <p class="text-white">
-                Rent cars as you are comfortable and where you are comfortable.
-              </p>
+            <div class="swiper-slide">
+              <div class="relative">
+                <div class="absolute text-center w-[416px] ml-[392px] mt-[60px] z-10">
+                  <h1 class="text-3xl text-white font-bold">Compact cars</h1>
+                  <p class="text-white">
+                    Rent cars as you are comfortable and where you are
+                    comfortable.
+                  </p>
+                </div>
+                <div class="bgshadow rounded-2xl"></div>
+                <img src="./images/Rectangle 671.jpg" alt="img" class="rounded-2xl" />
+              </div>
             </div>
-            <div class="bgshadow rounded-2xl"></div>
-            <img src="./images/Rectangle 671.jpg" alt="img" class="rounded-2xl" />
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="relative">
-            <div class="absolute text-center w-[416px] ml-[392px] mt-[60px] z-10">
-              <h1 class="text-3xl text-white font-bold">Compact cars</h1>
-              <p class="text-white">
-                Rent cars as you are comfortable and where you are comfortable.
-              </p>
+            <div class="swiper-slide">
+              <div class="relative">
+                <div class="absolute text-center w-[416px] ml-[392px] mt-[60px] z-10">
+                  <h1 class="text-3xl text-white font-bold">Compact cars</h1>
+                  <p class="text-white">
+                    Rent cars as you are comfortable and where you are
+                    comfortable.
+                  </p>
+                </div>
+                <div class="bgshadow rounded-2xl"></div>
+                <img src="./images/Rectangle 671 (1).jpg" alt="img" class="rounded-2xl" />
+              </div>
             </div>
-            <div class="bgshadow rounded-2xl"></div>
-            <img src="./images/Rectangle 671 (1).jpg" alt="img" class="rounded-2xl" />
           </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
-      
-      </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-    </div>
         <div
           class="absolute bg-white shadow-md rounded-full border z-10 w-[600px] h-[60px] flex items-center justify-between -mt-8 ml-[300px] hover:shadow-xl">
           <input type="text" placeholder="Find the car of your dreams"
             class="focus:outline-none p-3 rounded-full text-lg px-5 w-[500px] h-[60px]" />
           <i
-            class="bx bx-search flex items-center justify-center  w-[58px] h-[58px] mr-[2px] text-white text-2xl  bg-[#299764] rounded-full hover:bg-green-500"></i>
+            class="bx bx-search flex items-center justify-center w-[58px] h-[58px] mr-[2px] text-white text-2xl bg-[#299764] rounded-full hover:bg-green-500"></i>
         </div>
       </div>
     </section>
 
     <section class="dream mt-28">
-      <div class="container mx-auto ">
+      <div class="container mx-auto">
         <div class="flex items-center justify-center flex-col">
           <h1 class="text-3xl">Choose the car of your dreams</h1>
           <p class="w-[575px] text-center mt-[10px]">
@@ -139,9 +214,18 @@
             fleet
           </p>
           <div class="mt-10 flex justify-between gap-10">
-            <button class="py-[19px] px-10 border rounded-full hover:bg-[#F5F5F5] active:bg-[#299764] active:text-white duration-200">Compact</button>
-            <button class="py-[19px] px-10 border rounded-full hover:bg-[#F5F5F5] active:bg-[#299764] active:text-white duration-200">Sports cars</button>
-            <button class="py-[19px] px-10 border rounded-full hover:bg-[#F5F5F5] active:bg-[#299764] active:text-white duration-200">Vans</button>
+            <button
+              class="py-[19px] px-10 border rounded-full hover:bg-[#F5F5F5] active:bg-[#299764] active:text-white duration-200">
+              Compact
+            </button>
+            <button
+              class="py-[19px] px-10 border rounded-full hover:bg-[#F5F5F5] active:bg-[#299764] active:text-white duration-200">
+              Sports cars
+            </button>
+            <button
+              class="py-[19px] px-10 border rounded-full hover:bg-[#F5F5F5] active:bg-[#299764] active:text-white duration-200">
+              Vans
+            </button>
           </div>
         </div>
 
@@ -149,146 +233,181 @@
           <!-- render cars -->
         </div>
         <div class="flex justify-center mt-10">
-          <button class="py-[18px] px-8 border rounded-full hover:bg-[#F5F5F5] active:bg-[#299764] active:text-white duration-200">
+          <button
+            class="py-[18px] px-8 border rounded-full hover:bg-[#F5F5F5] active:bg-[#299764] active:text-white duration-200">
             View all cars
           </button>
         </div>
       </div>
     </section>
 
-
     <section class="bg-slate-200">
       <div class="container mx-auto">
-        <div class=" mt-[100px] py-[100px] min-h-[479px] flex">
-          <div class="min-w-[470px] flex flex-col bg-white  pb-[70px] pl-[70px] rounded-l-2xl">
+        <div class="mt-[100px] py-[100px] min-h-[479px] flex">
+          <div class="min-w-[470px] flex flex-col bg-white pb-[70px] pl-[70px] rounded-l-2xl">
             <span class="flex items-center pt-[70px]">
-              <img src="./images/google.svg" alt="google">
+              <img src="./images/google.svg" alt="google" />
               <p class="text-sky-600 ml-10">From Google</p>
             </span>
-            <h1 class="text-5xl w-[320px] mt-4 leading-tight">Hear what the community is saying</h1>
-            <hr class="hr__line mt-[30px] mb-[30px]">
+            <h1 class="text-5xl w-[320px] mt-4 leading-tight">
+              Hear what the community is saying
+            </h1>
+            <hr class="hr__line mt-[30px] mb-[30px]" />
             <p>More interesting reviews on Instagram</p>
             <div
-                class=" gradient-border-mask rounded-full text-center w-[194px] py-[18px] px-[50px] mt-4  hover:text-white hover:bg-gradient-to-tr from-[#8B2AB2] via-[#8B2AB2] via-[#D22A8A] via-[#EE2A7B] to-[#F9ED32] duration-200">
-                Instagram
+              class="gradient-border-mask rounded-full text-center w-[194px] py-[18px] px-[50px] mt-4 hover:text-white hover:bg-gradient-to-tr from-[#8B2AB2] via-[#8B2AB2] via-[#D22A8A] via-[#EE2A7B] to-[#F9ED32] duration-200">
+              Instagram
             </div>
           </div>
-          <div class="community bg-green-700 pt-[50px] pl-10 pb-10  flex flex-row  overflow-x-scroll gap-5 rounded-r-2xl">
-            <!-- render community card -->
+          <div class="community bg-green-700 pt-[50px] pl-10 pb-10 flex flex-row overflow-x-scroll gap-5 rounded-r-2xl ">
+<!--  -->
+          <!--  -->
           </div>
         </div>
       </div>
     </section>
-
 
     <section>
       <div class="container mx-auto">
         <h2 class="text-xl mt-40">More than 50 brands of cars</h2>
         <div class="flex justify-between items-center mt-8">
-          <img src="./images/ford.svg" alt="img">
-          <img src="./images/nissan.svg" alt="img">
-          <img src="./images/toyota.svg" alt="img">
-          <img src="./images/dodge.svg" alt="img">
-          <img src="./images/hyundai.svg" alt="img">
-          <img src="./images/jeep.svg" alt="img">
+          <img src="./images/ford.svg" alt="img" />
+          <img src="./images/nissan.svg" alt="img" />
+          <img src="./images/toyota.svg" alt="img" />
+          <img src="./images/dodge.svg" alt="img" />
+          <img src="./images/hyundai.svg" alt="img" />
+          <img src="./images/jeep.svg" alt="img" />
         </div>
       </div>
     </section>
 
-
     <section>
-      <div class="container mx-auto ">
+      <div class="container mx-auto">
         <div class="flex flex-col justify-between items-center">
           <h2 class="text-3xl mt-40">Unparalleled service</h2>
-          <p class="text-md text-center w-[684px] mt-[10px] max-w-[684px] px-12 leading-6">Whether you are looking for Newark Airport car rental, an insurance replacement vehicle or minivan to take on vacation Car rental has it all.</p>  
+          <p class="text-md text-center w-[684px] mt-[10px] max-w-[684px] px-12 leading-6">
+            Whether you are looking for Newark Airport car rental, an
+            insurance replacement vehicle or minivan to take on vacation Car
+            rental has it all.
+          </p>
         </div>
         <div class="flex flex-wrap gap-5 mt-10">
           <div class="w-[590px] h-[216px] rounded-xl bg-slate-200">
             <div class="flex justify-between items-center">
-              <h2 class="ml-8 mt-10 text-3xl w-[211px]">Book online,  pay online</h2>
-              <img src="./images/Icon1.svg" alt="img" class="mr-[44px] mt-[50px]">
+              <h2 class="ml-8 mt-10 text-3xl w-[211px]">
+                Book online,  pay online
+              </h2>
+              <img src="./images/Icon1.svg" alt="img" class="mr-[44px] mt-[50px]" />
             </div>
-            <p class="ml-8 w-[354px] mt-2">Complete the booking process A-Z, with our easy online system</p>
+            <p class="ml-8 w-[354px] mt-2">
+              Complete the booking process A-Z, with our easy online system
+            </p>
           </div>
 
           <div class="w-[590px] h-[216px] rounded-xl bg-slate-200">
             <div class="flex justify-between items-center">
-              <h2 class="ml-8 mt-10 text-3xl w-[211px]">Book online,  pay online</h2>
-                <i class='bx bxs-shield-alt-2 text-5xl text-[#299764] mr-[44px] mt-[50px]'></i>
-              <!-- <img src="./images/Icon1.svg" alt="img" class="mr-[44px] mt-[50px]"> -->
+              <h2 class="ml-8 mt-10 text-3xl w-[211px]">
+                Book online,  pay online
+              </h2>
+              <i class="bx bxs-shield-alt-2 text-5xl text-[#299764] mr-[44px] mt-[50px]"></i>
             </div>
-            <p class="ml-8 w-[354px] mt-2">Complete the booking process A-Z, with our easy online system</p>
+            <p class="ml-8 w-[354px] mt-2">
+              Complete the booking process A-Z, with our easy online system
+            </p>
           </div>
 
           <div class="w-[590px] h-[216px] rounded-xl bg-slate-200">
             <div class="flex justify-between items-center">
-              <h2 class="ml-8 mt-10 text-3xl w-[211px]">Book online,  pay online</h2>
-              <img src="./images/Icon.svg" alt="img" class="mr-[44px] mt-[50px]">
+              <h2 class="ml-8 mt-10 text-3xl w-[211px]">
+                Book online,  pay online
+              </h2>
+              <img src="./images/Icon.svg" alt="img" class="mr-[44px] mt-[50px]" />
             </div>
-            <p class="ml-8 w-[354px] mt-2">Complete the booking process A-Z, with our easy online system</p>
+            <p class="ml-8 w-[354px] mt-2">
+              Complete the booking process A-Z, with our easy online system
+            </p>
           </div>
 
           <div class="w-[590px] h-[216px] rounded-xl bg-slate-200">
             <div class="flex justify-between items-center">
-              <h2 class="ml-8 mt-10 text-3xl w-[211px]">Book online,  pay online</h2>
-                <i class='bx bxs-wallet-alt text-5xl text-[#299764] mr-[44px] mt-[50px]'></i>
+              <h2 class="ml-8 mt-10 text-3xl w-[211px]">
+                Book online,  pay online
+              </h2>
+              <i class="bx bxs-wallet-alt text-5xl text-[#299764] mr-[44px] mt-[50px]"></i>
             </div>
-            <p class="ml-8 w-[354px] mt-2">Complete the booking process A-Z, with our easy online system</p>
+            <p class="ml-8 w-[354px] mt-2">
+              Complete the booking process A-Z, with our easy online system
+            </p>
           </div>
-
         </div>
       </div>
     </section>
-
-
 
     <section>
       <div class="container mx-auto">
         <div class="mt-40 border pl-8 pb-8 flex">
           <div>
             <div class="w-[590px]">
-              <h2 class="mt-10 text-3xl font-semibold">Car rental keeps you safe</h2>
-              <p class="mt-[10px]  w-[570px] pr-8">The safety of our employees and renters is our number one priority. In addition to being confident your vehicle is cleaned and sanitized every time you rent, you can also feel confident that we will take every opportunity to enhance the health and safety measures currently practiced in our operations.</p>
+              <h2 class="mt-10 text-3xl font-semibold">
+                Car rental keeps you safe
+              </h2>
+              <p class="mt-[10px] w-[570px] pr-8">
+                The safety of our employees and renters is our number one
+                priority. In addition to being confident your vehicle is
+                cleaned and sanitized every time you rent, you can also feel
+                confident that we will take every opportunity to enhance the
+                health and safety measures currently practiced in our
+                operations.
+              </p>
             </div>
             <div class="mt-[94px] flex gap-3">
               <div class="w-[200px] bg-[#F5F5F5] rounded-xl p-3">
-                <img src="./images/kolba.svg" alt="img" class="pt-[26px] pl-[156px]">
-                <p class="mt-[30px]  pl-[15px]">Every car is thoroughly sanitized and cleaned</p>
+                <img src="./images/kolba.svg" alt="img" class="pt-[26px] pl-[156px]" />
+                <p class="mt-[30px] pl-[15px]">
+                  Every car is thoroughly sanitized and cleaned
+                </p>
               </div>
-  
+
               <div class="w-[200px] bg-[#F5F5F5] rounded-xl p-3">
-                <img src="./images/heart.svg" alt="img" class="pt-[26px] pl-[156px]">
-                <p class="mt-[30px]  pl-[15px]">All of our employees wear masks</p>
+                <img src="./images/heart.svg" alt="img" class="pt-[26px] pl-[156px]" />
+                <p class="mt-[30px] pl-[15px]">
+                  All of our employees wear masks
+                </p>
               </div>
-  
+
               <div class="w-[200px] bg-[#F5F5F5] rounded-xl p-3">
-                <img src="./images/lockfile.svg" alt="img" class="pt-[26px] pl-[156px]">
-                <p class="mt-[30px]  pl-[15px] ">We stay up to date with all protocol from the CDC</p>
+                <img src="./images/lockfile.svg" alt="img" class="pt-[26px] pl-[156px]" />
+                <p class="mt-[30px] pl-[15px]">
+                  We stay up to date with all protocol from the CDC
+                </p>
               </div>
             </div>
           </div>
           <div class="flex">
             <div class="bg-green-700 w-[300px] h-[300px] rounded-full absolute ml-[115px] mt-[30px]"></div>
-            <img src="./images/wepik--2022427-105555-removebg-preview 1.png" alt="img" class="z-10 w-[386px] h-[452px] ml-20 mt-12">
+            <img src="./images/wepik--2022427-105555-removebg-preview 1.png" alt="img"
+              class="z-10 w-[386px] h-[452px] ml-20 mt-12" />
           </div>
         </div>
       </div>
     </section>
-
-
   </main>
-
-
 
   <footer class="border mt-40 pl-[120px]">
     <div class="w-[1440px] mx-auto">
       <div class="flex justify-around mb-10">
-        <div class="w-[280px] ">
-          <img src="./images/Logo.svg" alt="logo" class="mt-10">
-          <p class="mt-5 text-md">Car rental offers a wide range of cars available for rent in Newark EWR Airport NJ. We pride ourselves in our customer service, and hassle-free renting experience.</p>
-          <p class="text-center mt-[84px] w-[158px] font-medium">© 2022 Car rental Terms & Conditions</p>
+        <div class="w-[280px]">
+          <img src="./images/Logo.svg" alt="logo" class="mt-10" />
+          <p class="mt-5 text-md">
+            Car rental offers a wide range of cars available for rent in
+            Newark EWR Airport NJ. We pride ourselves in our customer service,
+            and hassle-free renting experience.
+          </p>
+          <p class="text-center mt-[84px] w-[158px] font-medium">
+            © 2022 Car rental Terms & Conditions
+          </p>
         </div>
-        <div class="flex flex-col  w-[70%]">
+        <div class="flex flex-col w-[70%]">
           <div class="flex justify-between mt-[64px]">
             <ul>
               <p class="font-semibold leading-10">Main</p>
@@ -315,7 +434,7 @@
               <li><a href="#">4517 Washington Ave.</a></li>
             </ul>
           </div>
-          <hr class="my-10 h-2">
+          <hr class="my-10 h-2" />
           <div class="flex justify-between">
             <ul>
               <p class="font-semibold leading-10">Contact</p>
@@ -327,34 +446,34 @@
               <li><a href="#">8:00 - 21:00 Mon-Sat </a></li>
               <li><a href="#">9:00 - 15:00 Sundays</a></li>
             </ul>
-            <ul >
+            <ul>
               <p class="font-semibold leading-10">Social network</p>
               <span class="flex gap-2 mt-3">
-                <li><a href="#"><i class='bx bxl-instagram text-4xl text-white bg-black p-1 rounded-full'></i></a></li>
-                <li><a href="#"><i class='bx bxl-twitter text-4xl text-white bg-black p-1 rounded-full' ></i></a></li>
-                <li><a href="#"><i class='bx bxl-facebook-circle text-4xl text-white bg-black p-1 rounded-full' ></i></a></li>
-                <li><a href="#"><i class='bx bxl-whatsapp text-4xl text-white bg-black p-1 rounded-full' ></i></a></li>
+                <li>
+                  <a href="#"><i class="bx bxl-instagram text-4xl text-white bg-black p-1 rounded-full"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="bx bxl-twitter text-4xl text-white bg-black p-1 rounded-full"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="bx bxl-facebook-circle text-4xl text-white bg-black p-1 rounded-full"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="bx bxl-whatsapp text-4xl text-white bg-black p-1 rounded-full"></i></a>
+                </li>
               </span>
             </ul>
             <ul class="px-11">
               <li class="w-[70px] h-[70px] bg-green-800 rounded-full flex items-center justify-center mt-5">
-                <a href="#"><i class='bx bx-up-arrow-alt text-4xl text-white rounded-full bg-green-800'></i></a>
+                <a href="#"><i class="bx bx-up-arrow-alt text-4xl text-white rounded-full bg-green-800"></i></a>
               </li>
             </ul>
           </div>
         </div>
       </div>
-      <div>
-
-      </div>
+      <div></div>
     </div>
   </footer>
-
-
-
-
-
-
 </body>
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
@@ -363,10 +482,20 @@
 <script>
   var swiper = new Swiper(".mySwiper", {
     loop: true,
+    
+    pagination: {
+        el: ".swiper-pagination",
+        // type: "progressbar",
+      },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+    scrollbar: {
+      el: ".swiper-scrollbar",
+    },
+    speed: 400,
+    spaceBetween: 100,
   });
 </script>
 <script src="./utils.js"></script>
