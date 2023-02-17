@@ -122,6 +122,11 @@ const carList = [
   },
 ];
 
+
+sportsCar = [
+  {}
+]
+
 function renderCards(list) {
   list.forEach((cars) => {
     const carItem = createElement(
